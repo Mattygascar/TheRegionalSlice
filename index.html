@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore regional pizza styles across the U.S. including New York, Chicago, Detroit, Neapolitan, and more.">
   <title>The Regional Slice</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +13,13 @@
     <div class="header-inner">
       <div class="brand">
         <h1>The Regional Slice</h1>
-        <p class="tagline">Explore iconic pizza styles across the U.S.</p>
+        <p class="tagline">Explore iconic pizza styles across the U.S. and beyond.</p>
       </div>
 
       <nav class="site-nav" aria-label="Main Navigation">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="styles.html">Styles</a></li>
+          <li><a href="regions.html">Regions</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -26,6 +27,7 @@
   </header>
 
   <main class="container">
+
     <!-- Hero -->
     <section class="hero">
       <div class="hero-text">
@@ -34,7 +36,7 @@
           Click a slice below to explore a regional style, learn what makes it special,
           and get quick tips for recreating it at home.
         </p>
-        <a class="button" href="styles.html">Browse All Styles</a>
+        <a class="button" href="regions.html">Browse All Regions</a>
       </div>
 
       <div class="hero-image">
@@ -45,15 +47,17 @@
     <!-- Pizza navigation -->
     <section class="pizza-nav" aria-labelledby="pizzaNavTitle">
       <h2 id="pizzaNavTitle">Choose a Region</h2>
-      <p class="section-note">This pizza has exactly 6 slices—each one links to a style page section.</p>
+      <p class="section-note">
+        This pizza has exactly 6 slices—each one links to a regional style page.
+      </p>
 
       <div class="pizza-grid">
-        <a class="slice" href="styles.html#newyork">New York</a>
-        <a class="slice" href="styles.html#chicago">Chicago</a>
-        <a class="slice" href="styles.html#detroit">Detroit</a>
-        <a class="slice" href="styles.html#neapolitan">Neapolitan</a>
-        <a class="slice" href="styles.html#newhaven">New Haven</a>
-        <a class="slice" href="styles.html#other">Other</a>
+        <a class="slice" href="newyork.html">New York</a>
+        <a class="slice" href="chicago.html">Chicago</a>
+        <a class="slice" href="detroit.html">Detroit</a>
+        <a class="slice" href="neapolitan.html">Neapolitan</a>
+        <a class="slice" href="newhaven.html">New Haven</a>
+        <a class="slice" href="other.html">Other</a>
       </div>
     </section>
 
@@ -82,6 +86,7 @@
         </article>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -89,10 +94,11 @@
       <p class="footer-links">
         <a href="#">Social Media Links</a> |
         <a href="contact.html">Email Us</a> |
-        <a href="#">Buy Products</a>
+        <a href="regions.html">Buy Products</a>
       </p>
       <p class="copyright">&copy; 2026 The Regional Slice</p>
     </div>
   </footer>
+
 </body>
 </html>
