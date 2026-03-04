@@ -7,8 +7,20 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
   color: #333;
+
+  /* background image + soft overlay */
+  background-image:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url("pizzabackground.jpeg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+/* Pizza-style headings */
+h1, h2, h3 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -17,6 +29,7 @@ body {
   margin: auto;
 }
 
+/* Header */
 .site-header {
   background: #c62828;
   color: #fff;
@@ -32,31 +45,36 @@ body {
 }
 
 .brand h1 {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 
 .tagline {
   font-size: 0.9rem;
 }
 
+/* Navigation */
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  margin-right: 1rem;
+  gap: 2rem;
+  margin-right: 2rem;
 }
 
 .site-nav a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-  text-decoration: underline;
+  background: #a61b1b;
+  border-radius: 5px;
 }
 
+/* Hero */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -98,6 +116,7 @@ body {
   border-radius: 8px;
 }
 
+/* Pizza Navigation */
 .pizza-nav {
   margin: 2rem 0;
   text-align: center;
@@ -112,7 +131,7 @@ body {
 
 .slice {
   display: block;
-  background: #fff;
+  background: rgba(255,255,255,0.95);
   padding: 1rem;
   border-radius: 8px;
   text-decoration: none;
@@ -125,8 +144,9 @@ body {
   background: #ffe0b2;
 }
 
+/* Cards (polish effect: slightly translucent) */
 .card {
-  background: #fff;
+  background: rgba(255,255,255,0.95);
   padding: 1.5rem;
   margin: 2rem 0;
   border-radius: 8px;
@@ -143,10 +163,12 @@ body {
   flex: 1;
 }
 
+/* Supporting content */
 .supporting {
   margin: 2rem 0;
 }
 
+/* Forms */
 form {
   margin-top: 1rem;
 }
@@ -174,6 +196,7 @@ input[type="submit"]:hover {
   background: #a61b1b;
 }
 
+/* Footer */
 .site-footer {
   background: #333;
   color: #fff;
@@ -198,6 +221,7 @@ input[type="submit"]:hover {
   font-size: 0.8rem;
 }
 
+/* Region images */
 .region-img {
   width: 100%;
   max-width: 600px;
